@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h1 i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#searchBtn:hover {
+    background-color: #2980b9;
+}
+
+.weather-display {
+    margin-bottom: 30px;
+}
+
+.weather-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.weather-card h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.weather-content {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    font-size: 50px;
+    margin-right: 20px;
+    color: #3498db;
+}
+
+.weather-details {
+    flex: 1;
+}
+
+.weather-details p {
+    margin-bottom: 8px;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.forecast-card {
+    flex: 1;
+    min-width: 150px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.forecast-card h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.forecast-icon {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #3498db;
+}
+
+.search-history {
+    margin-top: 30px;
+}
+
+#historyList {
+    list-style: none;
+}
+
+#historyList li {
+    padding: 8px 12px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#historyList li:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .forecast-card {
+        min-width: 100%;
+    }
+}
